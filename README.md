@@ -29,7 +29,7 @@ By default, this plugin knows about 3 different environments:
 
 However, you can define your own environments by hooking into the ``shc_add_env_get_env`` filter, such as:
 
-```
+```PHP
 add_filter ('shc_add_env_get_env', 'my_env') ;
 
 function
@@ -46,7 +46,7 @@ my_env ($env)
 
 When hooking into ``shc_add_env_get_env`` to define your own environments, you should always also enqueue a stylesheet that defines style(s) for those environments:
 
-```
+```PHP
 add_action ('init', 'my_env_init') ;
 
 function
@@ -73,7 +73,7 @@ my_env_enqueue ()
 
 where ``css/my-env-show-env.css`` would contain a rule such as:
 
-```
+```CSS
 #wpadminbar .ab-top-menu .shc-add-env.qa .ab-item,
 #wpadminbar .ab-top-menu .shc-add-env.qa:hover .ab-item
 {
@@ -83,7 +83,7 @@ where ``css/my-env-show-env.css`` would contain a rule such as:
 
 Care should be taken to select colors that have sufficient contrast to the background-color of the admin bar for each of the Admin Color Scheme's shipped with WordPress.  If sufficient contrast can't be guaranteed, then add additional styling to help the Admin Bar stand out, e.g.,
 
-```
+```CSS
 .admin-color-sunrise #wpadminbar .ab-top-menu .shc-add-env.prod .ab-item
 {
 	border: 1px solid black ;
