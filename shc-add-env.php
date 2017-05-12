@@ -70,17 +70,25 @@ shc_add_env_add_node ()
 /**
  * Identify the environment
  *
- * If the SERVER_ADDR is a loopback or LAN IP address or SERVER_NAME is 'localhost', then 'Local';
- * else if WP_DEBUG is true, then 'Dev'; else 'Prod'.
- *
- * The value determined above is then filtered with the 'shc_add_env_get_env' filter,
- * by which other plugins could 
- *
  * @return string
+ *
+ * @todo write a better description
  */
 function
 shc_add_env_get_env ()
 {
+	// if one of our constants is defined, return that...without the possiblity to
+	// filter it
+	if (defined ('SHC_ADD_ENV_PROD')) {
+		return (array ('title' => SHC_ADD_ENV_PROD, 'class' => 'prod')) ;
+		}
+	else if (defined ('SHC_ADD_ENV_STAGING')) {
+		return (array ('title' => SHC_ADD_ENV_STAGING, 'class' => 'staging')) ;
+		}
+	else if (defined ('SHC_ADD_ENV_DEV')) {
+		return (array ('title' => SHC_ADD_ENV_DEV, 'class' => 'dev')) ;
+		}
+
 	/* translators: abbreviation for 'Production' */
 	$env = array ('title' => __('Prod', 'shc-add-env'), 'class' => 'prod') ;
 
