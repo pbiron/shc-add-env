@@ -1,5 +1,5 @@
 # Add Environment to Admin Bar
-Add an indication to the Admin Bar of the environment WordPress is running in (e.g., Prod, Dev, Local, etc)
+Add an indication to the Admin Bar of the environment WordPress is running in (e.g., Prod, Staging, Dev, etc)
 
 ## Description
 **Note**: this plugin is current in a "pre-alpha-release" state, and so it's behavior is constantly changing.
