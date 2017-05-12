@@ -2,6 +2,8 @@
 Add an indication to the Admin Bar of the environment WordPress is running in (e.g., Prod, Dev, Local, etc)
 
 ## Description
+**Note**: this plugin is current in a "pre-alpha-release" state, and so it's behavior is constantly changing.
+
 If you're like me, you often have multiple versions of the same WordPress site open in different browser windows, e.g.,  production in one window and development in another window.  And if you're like me, you have unwittingly edited content on the development environment thinking you were doing so in the production environment.  If so, then this plugin is for you!
 
 This plugin adds an indication of the current environment to the Admin Bar that is easier to see than your browser's address bar.
