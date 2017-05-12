@@ -29,6 +29,6 @@ TDW
 Please let me know by creating a new [issue](https://github.com/pbiron/shc-add-env/issues/new) and describe your idea.  
 Pull Requests are welcome!
 
-## Inspriation
+## Other Notes
 
 I was inspired to write this plugin when I saw the [Blue Admin Bar](https://wordpress.org/plugins/blue-admin-bar/) plugin.  I thought that was a great idea, but having the background-color of the entire Admin Bar be different was a bit jarring.
