@@ -48,13 +48,17 @@
 
 @media screen and ( max-width: 782px )
 {
+	/*
+	 * rules for smaller screens
+	 */
+
 	/* make sure our admin bar node shows on small screens */
 	#wpadminbar li#wp-admin-bar-shc-add-env
 	{
 		display: block ;
 	}
 
-	/* add some padding to equivlent to what is used by default for nodes in larger screens */
+	/* add some padding, equivlent to what is used by default for nodes in larger screens */
 	#wpadminbar li#wp-admin-bar-shc-add-env .ab-item
 	{
 		padding-left: 10px ;

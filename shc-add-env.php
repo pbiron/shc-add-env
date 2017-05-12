@@ -114,6 +114,8 @@ shc_add_env_get_env ()
 	 *     $title The title to show in the Admin Bar
 	 *     $class The class of the env.  One of 'prod', 'staging', 'dev'
 	 * }
+	 *
+	 * @todo add better descriptions for @param and @return, including how to define new classes
 	 */
 	return (apply_filters ('shc_add_env_get_env', $env)) ;
 }
