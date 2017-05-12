@@ -25,6 +25,24 @@ Installation of this plugin works like any other plugin out there:
 
 TDW
 
+## Changelog
+
+### 0.1.4
+
+* Added Other Notes section to readme.txt and README.md
+
+### 0.1.3
+
+* Lorem ipsum
+
+### 0.1.2
+
+* Added Plugin URI header so  [GitHub Updater](https://github.com/afragen/github-updater) would actually work
+
+### 0.1.1
+
+* Added Headers necessary to allow updating via [GitHub Updater](https://github.com/afragen/github-updater)
+
 ## Ideas?
 Please let me know by creating a new [issue](https://github.com/pbiron/shc-add-env/issues/new) and describe your idea.  
 Pull Requests are welcome!
