@@ -2,7 +2,8 @@
 /*
  * Plugin Name: Add Environment to Admin Bar
  * Description: Add an indication to the Admin Bar of the environment WordPress is running in (e.g., Prod, Dev, Local, etc)
- * Version: 0.1.1
+ * Plugin URI: https://github.com/pbiron/shc-add-env
+ * Version: 0.1.2
  * Author: Paul V. Biron/Sparrow Hawk Computing
  * Author URI: http://sparrowhawkcomputing.com
  * Text Domain: shc-add-env
