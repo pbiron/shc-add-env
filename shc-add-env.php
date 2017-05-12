@@ -55,12 +55,12 @@ shc_add_env_add_node ()
 
 	$env = shc_add_env_get_env () ;
 
-	$class = str_replace (' ', '-', strtolower ($env)) ;
+	$class = str_replace (' ', '-', $env['class']) ;
 	$args = array (
 		'id' => "shc-add-env",
 		'parent' => 'top-secondary',
 		'meta'   => array ('class' => "shc-add-env $class"),
-		'title' => $env,
+		'title' => $env['title'],
 		) ;
 	$wp_admin_bar->add_node ($args) ;
 
@@ -82,48 +82,30 @@ function
 shc_add_env_get_env ()
 {
 	/* translators: abbreviation for 'Production' */
-	$env = __('Prod', 'shc-add-env') ;
+	$env = array ('title' => __('Prod', 'shc-add-env'), 'class' => 'prod') ;
 
 	if (preg_match ('/^(127|192\.168|169\.254)\./', $_SERVER['SERVER_ADDR']) || 'localhost' === $_SERVER['SERVER_NAME']) {
 		/* translators: abbreviation for 'Localhost' */
-		$env = __('Local', 'shc-add-env') ;
+		$env = array ('title' => __('Local', 'shc-add-env'), 'class' => 'dev') ;
 		}
 	else if (defined ('WP_DEBUG') && WP_DEBUG) {
 		/* translators: abbreviation for 'Development' */
-		$env = __('Dev', 'shc-add-env') ;
+		$env = array ('title' => __('Dev', 'shc-add-env'), 'class' => 'dev') ;
 		}
+	// @todo figured out a way to detect a staging env
 
 	/**
 	 * Filter the value of the environment
 	 *
-	 * Those who hook into this filter and return a value other than 'Prod', 'Dev' or 'Local'
-	 * should also enqueue a stylesheet that defines the background color for their return value.
-	 *
-	 * For example, if the hooked function could return 'QA' or 'My Environment', they should
-	 * add the styles such as:
-	 *
-	 * #wpadminbar .ab-top-menu .shc-add-env.qa .ab-item,
-	 * #wpadminbar .ab-top-menu .shc-add-env.qa:hover .ab-item
-	 * {
-	 *		background-color: #523f6d ;
-	 * }
-	 * 
-	 * #wpadminbar .ab-top-menu .shc-add-env.my-environment .ab-item,
-	 * #wpadminbar .ab-top-menu .shc-add-env.my-environment:hover .ab-item
-	 * {
-	 *		background-color: #04a4cc ;
+	 * @param array $env {
+	 *     $title The title to show in the Admin Bar
+	 *     $class The class of the env.  One of 'prod', 'staging', 'dev'
 	 * }
 	 *
-	 * In such cases, care should be taken to select colors that have sufficient
-	 * contrast to the background-color of the admin bar for each of the Admin Color
-	 * Scheme's shipped with WordPress...and sufficient contrast can't be guaranteed,
-	 * the add additional styling (e.g., by adding a colored border) the help the
-	 * node stand out. See the '.admin-color-sunrise #wpadminbar .ab-top-menu .shc-add-env.prod .ab-item'
-	 * rule for an example.
-	 *
-	 * @param string $env The environment
-	 *
-	 * @return string
+	 * @return array $env {
+	 *     $title The title to show in the Admin Bar
+	 *     $class The class of the env.  One of 'prod', 'staging', 'dev'
+	 * }
 	 */
 	return (apply_filters ('shc_add_env_get_env', $env)) ;
 }

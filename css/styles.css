@@ -25,23 +25,23 @@
 }
 
 /*
- * rules for the 'Dev' environment
+ * rules for the 'Staging' environment
  *
  * The backgroud-color for this is same as the border-left-color of #message.notice-warning.
  */
-#wpadminbar .ab-top-menu .shc-add-env.dev .ab-item,
-#wpadminbar .ab-top-menu .shc-add-env.dev:hover .ab-item
+#wpadminbar .ab-top-menu .shc-add-env.staging .ab-item,
+#wpadminbar .ab-top-menu .shc-add-env.staging:hover .ab-item
 {
 	background-color: #ffba00 ;
 }
 
 /*
- * rules for the 'Prod' environment
+ * rules for the 'Dev' environment
  *
  * The backgroud-color for this is same as the border-left-color of #message.notice-success.
  */
-#wpadminbar .ab-top-menu .shc-add-env.local .ab-item,
-#wpadminbar .ab-top-menu .shc-add-env.local:hover .ab-item
+#wpadminbar .ab-top-menu .shc-add-env.dev .ab-item,
+#wpadminbar .ab-top-menu .shc-add-env.dev:hover .ab-item
 {
 	background-color: #46b450 ;
 }
