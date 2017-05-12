@@ -8,9 +8,9 @@ If you're like me, you often have multiple versions of the same WordPress site o
 
 This plugin adds an indication of the current environment to the Admin Bar that is easier to see than your browser's address bar.
 
-![Production](assets/screenshots-1.png?raw=true "Production")
-![Staging](assets/screenshots-2.png?raw=true "Staging")
-![Development](assets/screenshots-3.png?raw=true "Development")
+![Production](assets/screenshot-1.png?raw=true "Production")
+![Staging](assets/screenshot-2.png?raw=true "Staging")
+![Development](assets/screenshot-3.png?raw=true "Development")
 
 ## Installation
 Installation of this plugin works like any other plugin out there:
