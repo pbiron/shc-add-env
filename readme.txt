@@ -2,7 +2,7 @@
 Contributors: pbiron
 Tags: admin-bar
 Requires at least: 3.1
-Tested up to: 4.7.4
+Tested up to: 4.8
 Stable tag: 0.1.4
 
 Add an indication to the Admin Bar of the environment WordPress is running in (e.g., Prod, Staging, Dev, etc)
