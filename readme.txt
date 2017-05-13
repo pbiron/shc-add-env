@@ -1,9 +1,10 @@
 === Add Environment to Admin Bar ===
 Contributors: pbiron
-Tags: admin-bar
+Tags: admin, admin-bar
 Requires at least: 3.1
 Tested up to: 4.8
 Stable tag: 0.2.1
+Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=Z6D97FA595WSU
 
 Add an indication to the Admin Bar of the environment WordPress is running in (e.g., Prod, Staging, Dev, etc)
 
