@@ -27,8 +27,17 @@ Installation of this plugin works like any other plugin out there:
 1. Production
 2. Staging
 3. Development
+4. Custom &mdash; QA
 
 == Changelog ==
+
+= 0.1.6 =
+
+* Removed GitHub Branch header
+
+= 0.1.5 =
+
+* CSS fixes for WP 4.8-
 
 = 0.1.4 =
 

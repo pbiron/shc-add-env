@@ -11,6 +11,7 @@ This plugin adds an indication of the current environment to the Admin Bar that 
 ![Production](assets/screenshot-1.png?raw=true "Production")
 ![Staging](assets/screenshot-2.png?raw=true "Staging")
 ![Development](assets/screenshot-3.png?raw=true "Development")
+![Custom &mdash; QA](assets/screenshot-4.png?raw=true "Custom &mdash; QA")
 
 ## Installation
 Installation of this plugin works like any other plugin out there:
@@ -23,9 +24,17 @@ Installation of this plugin works like any other plugin out there:
 
 ## Filters
 
-TDW
+TBW
 
 ## Changelog
+
+### 0.1.6
+
+* Removed GitHub Branch header
+
+### 0.1.5
+
+* CSS fixes for WP 4.8-
 
 ### 0.1.4
 
