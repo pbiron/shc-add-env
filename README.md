@@ -28,6 +28,15 @@ TBW
 
 ## Changelog
 
+### 0.2.1
+
+* Added banner & icon assets
+
+### 0.2
+
+* The parameter and return value of the `shc_add_env_get_env` filter have changed.  In previous versions these were
+an associated array (with keys 'title' & 'class').  Starting with 1.0, they are a simple (indexed) array with the environment name in index 0 and the class in index 1.
+
 ### 0.1.6
 
 * Removed GitHub Branch header
